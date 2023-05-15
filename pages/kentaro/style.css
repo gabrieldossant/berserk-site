@@ -107,9 +107,11 @@
 
 .about {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
 }
 
 .kentaro-image {
