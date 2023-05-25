@@ -41,6 +41,7 @@ header {
 .input-field {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 .input {
     height: 45px;
