@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url(../../images/bg3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-bar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nav-bar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #910b0b;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.nav-bar ul li:hover::after {
+    width: 100%;
+}
+
+.container {
+    top: 50%;
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+    position: absolute;
+    top: 30%;
+}
+
+.heading h1 {
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.heading h1::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #910b0b;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.heading h1:hover::after {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px 30px;
+    top: 50%;
+    position: absolute;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-family: "roboto", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background: #910b0b;
+    width: 160px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+button:hover, button:focus, button:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
